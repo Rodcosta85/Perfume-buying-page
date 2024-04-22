@@ -1,0 +1,260 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0, 100%);
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: var(--dark-grayish-blue);
+}
+
+@media (min-width: 700px) {
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream);
+    width: 100vw;
+    height: 100vh;
+}
+    
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+}
+    
+#image-div {
+    grid-column: 1/2;
+}
+
+img {
+    height: 450px;
+    width: 300px;
+}
+
+#info-div {
+    background-color: white;
+    grid-column: 2/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 25px;
+}
+
+#first-p {
+    margin-top: 9px;
+    font-weight: 500;
+}
+
+#perfume-name {
+    color: var(--very-dark-blue);
+    height: 96px;
+    width: 236px;
+    font-size: 35px;
+    margin-top: 10px;
+    line-height: 35px;
+}
+
+#description {
+    height: 92px;
+    width: 239px;
+    line-height: 22px;
+    margin-top: 11px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+#prices {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 12px;
+}
+
+#full-price {
+    margin: 0;
+    color: var(--dark-cyan);
+}
+
+#crossed-price {
+    text-decoration: line-through;
+    margin-left: 16px;
+}
+
+button {
+    background-color: var(--dark-cyan);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    height: 48px;
+    width: 236px;
+    padding: 8px 20px 8px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 0;
+    margin-bottom: 9px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(158, 42%, 20%) ;
+}
+
+.material-symbols-outlined {
+    margin-right: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover {
+    text-decoration: none;
+}
+}
+
+
+
+/*FOR MOBILE DEVICES */
+@media (max-width: 700px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cream);
+        width: 100vw;
+        height: 100vh;  
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: 240px 371px;
+        border-radius: 15px;
+        width: 343px;
+        height: 611px;
+        overflow: hidden;  
+    }
+
+    #img-div {
+        grid-row: 1/2;
+    }
+
+    img {
+        height: 240px;
+        width: 343px;
+        object-fit: cover;
+    }
+
+    #info-div {
+        background-color: white;
+        grid-row: 2/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        padding: 18px 23px 18px 23px;
+    }
+
+    #first-p {
+        font-weight: 500;
+        font-size: 13px;
+        width: 92px;
+        height: 15px;
+        margin: 0 0 16px 0;
+    }
+
+    #perfume-name {
+        color: var(--very-dark-blue);
+        height: 64px;
+        width: 295px;
+        font-size: 33px;
+        line-height: 28px;
+        margin: 8px 0 10px 0;
+    }
+    
+    #description {
+        height: 92px;
+        width: 295px;
+        line-height: 23px;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0;
+    }
+    
+    #prices {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        height: 32px;
+        width: 194px;
+    }
+    
+    #full-price {
+        color: var(--dark-cyan);
+        font-size: 30px;
+        margin: 0;
+    }
+    
+    #crossed-price {
+        text-decoration: line-through;
+        margin-left: 16px;
+    }
+    
+    button {
+        background-color: var(--dark-cyan);
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        border-radius: 8px;
+        padding: 8px 20px 8px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        margin-top: 20px;
+        margin-bottom: 0;
+        height: 48px;
+        width: 295px;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        background-color: hsl(158, 42%, 20%) ;
+    }
+    
+    .material-symbols-outlined {
+        margin-right: 8px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    
+    a:hover {
+        text-decoration: none;
+    }
+}
+
