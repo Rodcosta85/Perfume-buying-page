@@ -39,9 +39,11 @@ main {
     grid-column: 1/2;
 }
 
-img {
+#img {
     height: 450px;
     width: 300px;
+    content: url('image-product-desktop.jpg');
+    margin: 0;
 }
 
 #info-div {
@@ -120,15 +122,6 @@ button:hover {
 .material-symbols-outlined {
     margin-right: 8px;
 }
-
-a {
-    text-decoration: none;
-    color: var(--white);
-}
-
-a:hover {
-    text-decoration: none;
-}
 }
 
 
@@ -157,10 +150,11 @@ a:hover {
         grid-row: 1/2;
     }
 
-    img {
+   #img {
         height: 240px;
         width: 343px;
-        object-fit: cover;
+        content: url('image-product-mobile.jpg');
+        margin: 0;
     }
 
     #info-div {
@@ -245,16 +239,6 @@ a:hover {
     
     .material-symbols-outlined {
         margin-right: 8px;
-    }
-    
-    a {
-        text-decoration: none;
-        color: var(--white);
-    }
-
-    
-    a:hover {
-        text-decoration: none;
     }
 }
 
